@@ -2,6 +2,7 @@ package restapi;
 
 import javax.xml.bind.annotation.XmlElement;
 
+
 public class Rate {
 	private String no;
 	private String effectiveDate;
