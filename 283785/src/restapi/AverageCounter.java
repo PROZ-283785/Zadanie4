@@ -7,8 +7,12 @@ public class AverageCounter {
 
 		for (Rate e : ers.getRates()) {
 			System.out.println(e.getEffectiveDate());
-			System.out.println(e.getMid());
-			avg += e.getMid();
+			if(e.getMid() != null) {
+				avg += e.getMid();
+			} else {
+				avg += (e.getAsk() + e.getBid()) / 2; 
+			}
+			
 		}
 
 		return avg / ers.getRates().size();

@@ -7,6 +7,26 @@ public class Rate {
 	private String no;
 	private String effectiveDate;
 	private Float mid;
+	private Float bid;
+	private Float ask;
+
+	@XmlElement(name = "Bid")
+	public Float getBid() {
+		return bid;
+	}
+
+	public void setBid(Float bid) {
+		this.bid = bid;
+	}
+
+	@XmlElement(name = "Ask")
+	public Float getAsk() {
+		return ask;
+	}
+
+	public void setAsk(Float ask) {
+		this.ask = ask;
+	}
 
 	@XmlElement(name = "No")
 	public String getNo() {

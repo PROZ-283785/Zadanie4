@@ -12,7 +12,7 @@ public class ExchangeRatesSeries {
 	private String currency;
 	private String code;
 	private List<Rate> rates;
-	
+
 	@XmlElement(name = "Table")
 	public String getTable() {
 		return table;
